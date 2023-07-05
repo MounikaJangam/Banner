@@ -1,0 +1,172 @@
+.AppLauncherContainer{
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: -5px 3px 59px -5px rgba(0,0,0,0.75);
+    transition: transform 400ms ease-out;
+    .AppLauncherContainer_Footer{
+        color:#74bbe2;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
+    .AppLauncherContainer_Footer:hover{
+        color:#74bbe2;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+	&--isHidden {
+        
+        width: 350px;
+        position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: -5px 3px 59px -5px rgba(0,0,0,0.75);
+		transform: translateX(-23rem);
+		transition: transform 400ms ease-in;
+        .AppLauncherContainer_Header{
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .AppLauncherContainer_Body{
+                width: 300px;
+                .AppLauncherContainer_Body_Header{
+                    padding: 20px;
+                    p{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            .AppLauncherContainer_Body_Container{
+                display: grid;
+                grid-template-columns: repeat(2, 100px);
+                grid-template-rows: repeat(4, 50px);
+                grid-column-gap: 65px;
+                grid-row-gap: 4px;
+                margin: 0 9% ;
+                .AppLauncherContainer_Body_Container_Item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 155px;
+                    height: 40px;
+                    align-items: center;
+                    padding: 5px 15px;
+                    cursor: pointer;
+                }
+    
+                .AppLauncherContainer_Body_Container_Item:hover{
+                    background-color: #cbcbcb;
+                }
+              
+            }
+            
+        }
+        .AppLauncherContainer_Footer{
+            color:#74bbe2;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+        }
+        .AppLauncherContainer_Body_Container_Item__body{
+            margin-left: 10px;
+        }
+	}
+
+    // hidden end
+    .AppLauncherContainer_Body_Container_Item__body{
+        margin-left: 10px;
+    }
+    .AppLauncherContainer_Header{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .AppLauncherContainer_Header h4:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .AppLauncherContainer_Body{
+            width: 300px;
+            .AppLauncherContainer_Body_Header{
+                padding: 20px;
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        .AppLauncherContainer_Body_Container{
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            grid-template-rows: repeat(4, 50px);
+            grid-column-gap: 65px;
+            grid-row-gap: 4px;
+            margin: 0 9% ;
+            .AppLauncherContainer_Body_Container_Item{
+                width: 155px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 5px 15px;
+                cursor: pointer; 
+            }
+
+            .AppLauncherContainer_Body_Container_Item:hover{
+                transition: transform 400ms ease-in;
+                background-color: #dadada;
+            }
+
+        }
+        
+    }
+}
+
+.AppLauncherContainer_Header_icon{
+    padding:"10px 10px";
+    transition: transform 400ms ease-in;
+
+    
+}
+.AppLauncherContainer_Header_icon_rotated{
+    padding:"10px 10px";
+    
+    transition: transform 400ms ease-in-out;
+    // animation: rotateDaArrow 900ms;
+    transition-delay: 600ms;
+    transform: rotate(180deg);
+}
+
+// @keyframes rotateDaArrow{
+//     0%{
+//     transform: rotate(0deg);
+
+//     }
+
+//     // 50%{
+//     //     transform: rotate(90deg);
+//     // }
+
+//     100%{
+//         transform: rotate(180deg);
+
+//     }
+// }

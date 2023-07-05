@@ -1,0 +1,45 @@
+{
+  "id": "4056dc3d-50de-4491-a826-34460945a130",
+  "alias": "NewHeaderApplicationCustomizer",
+  "componentType": "Extension",
+  "extensionType": "ApplicationCustomizer",
+  "version": "0.0.2",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/dist/"
+    ],
+    "entryModuleId": "new-header-application-customizer",
+    "scriptResources": {
+      "new-header-application-customizer": {
+        "type": "path",
+        "path": "new-header-application-customizer.js"
+      },
+      "@microsoft/sp-application-base": {
+        "type": "component",
+        "id": "4df9bb86-ab0a-4aab-ab5f-48bf167048fb",
+        "version": "1.16.1"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.16.1"
+      },
+      "react": {
+        "type": "component",
+        "id": "0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d",
+        "version": "17.0.1"
+      },
+      "react-dom": {
+        "type": "component",
+        "id": "aa0a46ec-1505-43cd-a44a-93f3a5aa460a",
+        "version": "17.0.1"
+      },
+      "NewHeaderApplicationCustomizerStrings": {
+        "type": "path",
+        "path": "NewHeaderApplicationCustomizerStrings_en-us.js"
+      }
+    }
+  }
+}
